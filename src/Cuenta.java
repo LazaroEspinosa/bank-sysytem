@@ -14,7 +14,16 @@ public abstract class Cuenta implements Autenticate{
     private Cliente cliente;
     private Contabilidad contabilidad=new Contabilidad();
 
-    //Constructor
+    /*
+    CONSTRUCTORES:
+    sirven para forzar la asignacion de atributos y otras variables.
+    En el caso de a continuacion, cada vez que un objeto tipo cuenta es creado, es necesario asignarle un valor de cuentaId y de clienteId.
+    La palabra reservada "this" es para cuando un metodo tiene dos variables con el mismo nombre:
+    uno es el del atributo de la clase y el otro es el parametro de entrada, "this" siempre se va a usar para el atributo de la clase.
+
+    Al crearse un objeto tipo cuenta, se ejecuta el metodo setCuentaId, enviando como parametro el valor actual del atributo cuentaId.
+    Tambien crea un objeto tipo cliente y se le asigna el clienteId.
+    */
     public Cuenta(String cuentaId, String clienteId){
         setCuentaId(cuentaId);
         this.cliente=new Cliente(clienteId);
