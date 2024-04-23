@@ -49,10 +49,13 @@ public abstract class Cuenta implements Autenticate{
 
     //METODOS
 
+    /*
+    METODOS ABSTRACTOS:
+    Las clases abstractas deben tener al menos un metodo abstracto.
+    Los metodos abstractos pueden tener cuerpo (Llaves "{}") aunque tenerlo es reduntante porque deben ser sobreescritos en todas las clases hijas.
+    Un metodo abstracto debe sobreescribirse, obligando a que las clases hijas desarrollen su propio algoritmo de ejecucion.
+    */
     public abstract void comprar(double valor);
-    public void depositar(double valor){
-        this.saldo+=valor;
-    }
 
     public boolean retirar(double valor){
         if(valor>this.saldo){
