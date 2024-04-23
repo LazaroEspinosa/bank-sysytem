@@ -68,6 +68,11 @@ public abstract class Cuenta implements Autenticate{
         }
     }
 
+    /*
+    Creamos un objeto temporal tipo cuenta.
+    Su valor sera el resultado del objeto tipo contabilidad convocando al metodo consultaDeCuenta, es decir una cuenta independiente de la cuenta actual.
+    Luego, si la condicion retirar(valor) es true, se realizara el deposito de la cuenta previamente encontrada por el mismo valor del que se retiro.
+    */
     public void transferir(String cuentaId, double valor){
         Cuenta cuentaDestino=this.contabilidad.consultaDeCuenta(cuentaId);
         if(retirar(valor)){
