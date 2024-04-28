@@ -40,6 +40,14 @@ public class CuentaGold extends Cuenta{
     }
 
     @Override
+    /*
+    Se agrega un if que verifica si la cuenta del usuario esta bloqueada o no.
+    Si la condicion es correcta, se lanza una exception del tipo previamente creado (CuentaBloqueadaException).
+    Se puede delegar la exception a los metodos posteriores o tratarla ahi mismo.
+    Se elige la segunda opcion y se encierra el if dentro de un try-catch.
+    Si la cuenta efectivamente esta bloqueada(O cualquier otro criterio que sabemos que lanzara una exception), el metodo retorna false desde el catch.
+    De lo contrario, el codigo sigue y verifica si el password ingresado es el mismo al guardado en la cuenta.
+    */
     public boolean logIn(String claveRequest){
         try{
             if(getCuentaBloqueada()){
