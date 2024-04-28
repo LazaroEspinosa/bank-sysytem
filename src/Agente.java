@@ -28,6 +28,11 @@ public class Agente extends Empleado{
         contabilidad.registroDeCuenta(cuentaNueva);
     }
 
+    /*
+    Despues de crear una excepcion en caso de que alguien haga el login de una cuenta bloqueada.
+    Se crea el metodo bloquear cuenta. No es necesario cada vez que se crea un exception.
+    En este caso particular si, para lograr que un agente pueda bloquear y desbloquear las cuentas de los usuarios.
+    */
     public void bloquearCuentaSiNo(String cuentaId){
         Contabilidad contabilidadTemporal=new Contabilidad();
         Cuenta cuenta=contabilidadTemporal.consultaDeCuenta(cuentaId);
