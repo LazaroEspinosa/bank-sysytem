@@ -24,8 +24,6 @@ public class Main{
                         System.out.println("Ingrese su password: ");
                         if (cuentaTest.logIn(userStringInput())){
                             sistemaCliente(cuentaTest);
-                        }else{
-                            System.out.println("Password incorrecta");
                         }
                     }
                     break;
@@ -105,19 +103,27 @@ public class Main{
         int userOption;
 
         while(systemOn){
+            String clienteId;
+            String cuentaId;
             System.out.println("******BIENVENIDO Empleado******");
             System.out.println("Seleccione su operacion");
             System.out.println("1. Crear cuenta.");
+            System.out.println("2. Bloquear cuenta");
             System.out.println("0. Salir.");
             userOption= userDoubleInput();
 
             switch (userOption){
                 case 1:
                     System.out.println("Ingrese el Id de su cliente: ");
-                    String clienteId=userStringInput();
+                    clienteId=userStringInput();
                     System.out.println("Ingrese el numero de cuenta: ");
-                    String cuentaId=userStringInput();
+                    cuentaId=userStringInput();
                     agente.crearCuenta(cuentaId, clienteId);
+                    break;
+                case 2:
+                    System.out.println("Ingrese el numero de cuenta: ");
+                    cuentaId=userStringInput();
+                    agente.bloquearCuentaSiNo(cuentaId);
                     break;
                 case 0:
                     System.out.println("Cerrando sistema");

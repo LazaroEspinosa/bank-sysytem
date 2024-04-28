@@ -28,6 +28,18 @@ public class Agente extends Empleado{
         contabilidad.registroDeCuenta(cuentaNueva);
     }
 
+    public void bloquearCuentaSiNo(String cuentaId){
+        Contabilidad contabilidadTemporal=new Contabilidad();
+        Cuenta cuenta=contabilidadTemporal.consultaDeCuenta(cuentaId);
+        if (cuenta.getCuentaBloqueada()){
+            cuenta.setCuentaBloqueada(false);
+            System.out.println("Cuenta desbloqueada");
+        }else{
+            cuenta.setCuentaBloqueada(true);
+            System.out.println("cuenta bloqueada");
+        }
+    }
+
     public String userStringInput(){
         Scanner localScanner=new Scanner(System.in);
         String userOption=localScanner.nextLine();

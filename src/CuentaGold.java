@@ -41,10 +41,19 @@ public class CuentaGold extends Cuenta{
 
     @Override
     public boolean logIn(String claveRequest){
+        try{
+            if(getCuentaBloqueada()){
+                throw new CuentaBloqueadaException("Cuenta bloqueada");
+            }
+        }catch (CuentaBloqueadaException cbe){
+            System.out.println(cbe.getMessage());
+            return false;
+        }
         if(claveRequest.equals(this.clave)){
-            System.out.println("Login exitoso");
+            System.out.println("Login Exitoso");
             return true;
         }else{
+            System.out.println("Password Incorrecta");
             return false;
         }
     }

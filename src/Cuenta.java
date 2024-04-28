@@ -12,6 +12,7 @@ public abstract class Cuenta implements Autenticate{
     private String cuentaId;
     private double saldo;
     private Cliente cliente;
+    private boolean cuentaBloqueada;
     private Contabilidad contabilidad=new Contabilidad();
 
     /*
@@ -47,6 +48,11 @@ public abstract class Cuenta implements Autenticate{
         return cliente;
     }
 
+    public boolean getCuentaBloqueada(){return cuentaBloqueada;}
+    public void setCuentaBloqueada(boolean state){
+        this.cuentaBloqueada=state;
+    }
+
     //METODOS
 
     /*
@@ -66,6 +72,10 @@ public abstract class Cuenta implements Autenticate{
             System.out.println("Retiro completado");
             return true;
         }
+    }
+
+    public void depositar(double valor){
+        this.saldo+=valor;
     }
 
     /*
