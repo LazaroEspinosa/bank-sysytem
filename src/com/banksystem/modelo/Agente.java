@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 import java.util.Scanner;
 
 public class Agente extends Empleado{
@@ -38,7 +40,7 @@ public class Agente extends Empleado{
         Cuenta cuenta=contabilidadTemporal.consultaDeCuenta(cuentaId);
         if (cuenta.getCuentaBloqueada()){
             cuenta.setCuentaBloqueada(false);
-            System.out.println("Cuenta desbloqueada");
+            System.out.println("com.banksystem.modelo.Cuenta desbloqueada");
         }else{
             cuenta.setCuentaBloqueada(true);
             System.out.println("cuenta bloqueada");

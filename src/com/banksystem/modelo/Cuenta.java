@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 /*
 ABSTRACCION: Una clase abstracta se declara despues del modificador de acceso.
 Sirve para declarar una clase padre como plantilla, por ejemplo: un vendedor y un gerente son empleados;

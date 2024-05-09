@@ -1,4 +1,4 @@
-/*
+package com.banksystem.modelo;/*
 EXCEPTIONS
 El control de exceptions es importante para identificar y corregir interrupciones en el flujo del codigo.
 El control de excepciones tambien ayuda a mostrar la causa de un error de forma mas amigable para el usuario.

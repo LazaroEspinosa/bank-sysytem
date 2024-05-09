@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +8,7 @@ public class Contabilidad{
     //ATRIBUTOS
     /*
     Un atributo de tipo collection:
-    Un atributo tipo Lista que almacena objetos Cuenta llamada listaDeCuentasCreadas crea un nuevo Arraylist.
+    Un atributo tipo Lista que almacena objetos com.banksystem.modelo.Cuenta llamada listaDeCuentasCreadas crea un nuevo Arraylist.
     El atributo es static, lo que quiere decir que sin importar el numero de objetos creados,
     la listaDeCuentasCreadas tendra siempre los mismos valores a menos que se agreguen o eliminen en algun metodo.
     */
@@ -19,22 +21,22 @@ public class Contabilidad{
     */
     public void registroDeCuenta(Cuenta cuenta){
         listaDeCuentasCreadas.add(cuenta);
-        System.out.println("Cuenta registrada");
+        System.out.println("com.banksystem.modelo.Cuenta registrada");
     }
 
     /*
     Viene la magia:
     Necesitamos un metodo que pueda recibir un String y buscar coincidencias de ese string dentro del arraylist.
-    En caso de que sea verdadero, devolver el objeto (Cuenta) que coincide con el String.
+    En caso de que sea verdadero, devolver el objeto (com.banksystem.modelo.Cuenta) que coincide con el String.
 
     Para eso, el metodo debe ser public.
-    Debe devolver un objeto tipo Cuenta.
+    Debe devolver un objeto tipo com.banksystem.modelo.Cuenta.
     Lo llamaremos consulta de cuenta.
     Y el String se llamara cuentaId, ya que es un atributo que se asigna a cada cuenta creada obligatoriamente.
 
     Como buscar el String:
-    Creamos un objeto temporal tipo Cuenta y recorremos los elementos dentro del array:
-    for(Cuenta cuenta:listaDeCuentasCreadas){//Hacer algo si es True} ->> Por cada cuenta dentro de listaDeCuentasCreadas
+    Creamos un objeto temporal tipo com.banksystem.modelo.Cuenta y recorremos los elementos dentro del array:
+    for(com.banksystem.modelo.Cuenta cuenta:listaDeCuentasCreadas){//Hacer algo si es True} ->> Por cada cuenta dentro de listaDeCuentasCreadas
     "cuenta" tomara la "forma" de cada objeto dentro del arraylist.
 
     Ahora metemos esa "cuenta" en un if para evaluarla:
@@ -45,11 +47,11 @@ public class Contabilidad{
     public Cuenta consultaDeCuenta(String cuentaId){
         for(Cuenta cuenta:listaDeCuentasCreadas){
             if(cuenta.getCuentaId().equals(cuentaId)){
-                System.out.println("Cuenta Encontrada");
+                System.out.println("com.banksystem.modelo.Cuenta Encontrada");
                 return cuenta;
             }
         }
-        System.out.println("Cuenta no encontrada");
+        System.out.println("com.banksystem.modelo.Cuenta no encontrada");
         return null;
     }
 }

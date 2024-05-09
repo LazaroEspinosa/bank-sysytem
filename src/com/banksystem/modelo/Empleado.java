@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 public abstract class Empleado {
 
     //ATRIBUTOS

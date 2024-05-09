@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 public class CuentaGold extends Cuenta{
 
     //ATRIBUTOS
@@ -20,8 +22,8 @@ public class CuentaGold extends Cuenta{
     //METODOS
     /*
     El metodo comprar es sobreescrito porque es un metodo abstracto en la clase padre.
-    Los metodos setClave y logIn son sobreescritos porque son metodos de la interface Autenticate.
-    La interface Autenticate se implementa en la clase cuenta padre, que al ser abstracta no necesita sobreescribir los metodos de la interface;
+    Los metodos setClave y logIn son sobreescritos porque son metodos de la interface com.banksystem.modelo.Autenticate.
+    La interface com.banksystem.modelo.Autenticate se implementa en la clase cuenta padre, que al ser abstracta no necesita sobreescribir los metodos de la interface;
     Pero sus clases hijas si.
     */
     @Override
@@ -42,7 +44,7 @@ public class CuentaGold extends Cuenta{
     @Override
     /*
     Se agrega un if que verifica si la cuenta del usuario esta bloqueada o no.
-    Si la condicion es correcta, se lanza una exception del tipo previamente creado (CuentaBloqueadaException).
+    Si la condicion es correcta, se lanza una exception del tipo previamente creado (com.banksystem.modelo.CuentaBloqueadaException).
     Se puede delegar la exception a los metodos posteriores o tratarla ahi mismo.
     Se elige la segunda opcion y se encierra el if dentro de un try-catch.
     Si la cuenta efectivamente esta bloqueada(O cualquier otro criterio que sabemos que lanzara una exception), el metodo retorna false desde el catch.
@@ -51,7 +53,7 @@ public class CuentaGold extends Cuenta{
     public boolean logIn(String claveRequest){
         try{
             if(getCuentaBloqueada()){
-                throw new CuentaBloqueadaException("Cuenta bloqueada");
+                throw new CuentaBloqueadaException("com.banksystem.modelo.Cuenta bloqueada");
             }
         }catch (CuentaBloqueadaException cbe){
             System.out.println(cbe.getMessage());

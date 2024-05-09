@@ -1,3 +1,9 @@
+package com.banksystem.test;
+
+import com.banksystem.modelo.Agente;
+import com.banksystem.modelo.Contabilidad;
+import com.banksystem.modelo.Cuenta;
+
 import java.util.Scanner;
 
 public class Main{
@@ -11,8 +17,8 @@ public class Main{
 
         while(systemOn){
             System.out.println("Sistema principal, Elige tu tipo de usuario:");
-            System.out.println("1. Cliente.");
-            System.out.println("2. Empleado.");
+            System.out.println("1. com.banksystem.modelo.Cliente.");
+            System.out.println("2. com.banksystem.modelo.Empleado.");
             System.out.println("3. Administrador.");
             System.out.println("0. Cerrar sistema.");
             userIntOption= userDoubleInput();
@@ -105,7 +111,7 @@ public class Main{
         while(systemOn){
             String clienteId;
             String cuentaId;
-            System.out.println("******BIENVENIDO Empleado******");
+            System.out.println("******BIENVENIDO com.banksystem.modelo.Empleado******");
             System.out.println("Seleccione su operacion");
             System.out.println("1. Crear cuenta.");
             System.out.println("2. Bloquear cuenta");

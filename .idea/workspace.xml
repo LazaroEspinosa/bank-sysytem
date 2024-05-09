@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f722b5fc-331b-48d4-9db4-81f4a641085d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Agente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Agente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autenticate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Autenticate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contabilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Contabilidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CuentaBloqueadaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/CuentaBloqueadaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CuentaGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/CuentaGold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/modelo/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/banksystem/test/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ldeb6/OneDrive/2Proyectos/Alura/bank-system"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldeb6/OneDrive/2Proyectos/Alura/bank-system&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

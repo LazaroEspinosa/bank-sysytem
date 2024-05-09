@@ -1,3 +1,5 @@
+package com.banksystem.modelo;
+
 public interface Autenticate {
     /*
     Las clases que implementen interfaces, estan obligadas a sobreescribir sus metodos.
